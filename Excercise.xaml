@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Excercise"
+             Title="Excercise">
+    <StackLayout Margin="10"
+                  BackgroundColor="GhostWhite">
+        <Label Text="9*20-5+2"
+               x:Name="ques"
+               FontSize="22"
+               LineBreakMode="NoWrap"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"
+               TextColor="Black" Margin="0"/>
+        <RadioButton Content="11"
+                x:Name="a"
+                FontSize="22"
+                HeightRequest="60"  
+                WidthRequest="160"
+                CheckedChanged="onCheckResult" />
+        <RadioButton Content="59"
+                x:Name="b"
+                FontSize="22"
+                HeightRequest="60"  WidthRequest="160"
+                CheckedChanged="onCheckResult" />
+        <RadioButton Content="75"
+                x:Name="c"
+                FontSize="22"
+                HeightRequest="60"  WidthRequest="160"
+                CheckedChanged="onCheckResult" />
+        <Button 
+                Text="Submit" TextColor="Black" FontSize="Medium"
+                CornerRadius="5" 
+                HeightRequest="40"  WidthRequest="120"
+                BackgroundColor="DarkCyan"
+                Clicked="onSubmit" Margin="15"
+                />
+        <Button 
+                Text="Next" TextColor="Black" FontSize="Medium"
+                Grid.Row="1" Grid.Column="1"
+                CornerRadius="5" 
+                HeightRequest="40"  WidthRequest="120"
+                BackgroundColor="HotPink"
+                Clicked="onChangeQuestion"
+                />
+    </StackLayout>
+</ContentPage>
